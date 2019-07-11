@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ESM in Beaker</title>
+    <script src="main.js" charset="utf-8" type="module"></script>
+  </head>
+  <body>
+    <h1>Reproducing an issue with ESM in Beaker</h1>
+    <p>Have a look at the console. I get:</p>
+    <pre>
+Failed to load module script: The server responded with a non-JavaScript MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.</pre
+    >
+    <p>
+      Could this be happening because the module being imported is local, so it
+      is being served from my filesystem?
+    </p>
+  </body>
+</html>
